@@ -14,20 +14,6 @@ function validate() {
     }
 }
 
-var picture_index = 0;
-
-function prev() {
-    picture_index = ((picture_index + 5) - 1) % 5
-    var picture_uri = `pictures/${picture_index}.jpeg`
-    document.getElementById("picture").src = picture_uri
-}
-
-function next() {
-    picture_index = (picture_index + 1) % 5
-    var picture_uri = `pictures/${picture_index}.jpeg`
-    document.getElementById("picture").src = picture_uri
-}
-
 function alert_paragraph_color() {
     var border_R = document.getElementById("border_R").value;
     var border_G = document.getElementById("border_G").value;
