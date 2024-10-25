@@ -15,3 +15,4 @@ for ($i = 1; $i <= $rows; $i++) {
 }
 echo "</table>"; 
 ?>
+Old attempt, ended up doing it in the html file
