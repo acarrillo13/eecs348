@@ -1,12 +1,43 @@
-<html><head>
-</head><body><h1>EECS 348 Lab Seven Practice Four</h1>
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $number = intval($_POST['number']);
+    
+    if ($number > 0) {
+        echo "<h2>Multiplication Table up to $number</h2>";
+        
+        // Create the table
+        echo "<table border='1' cellpadding='5' cellspacing='0'>";
+        
+        // Table Rows
+        for ($row = 1; $row <= $number; $row++) {
+            echo "<tr>";
+            for ($col = 1; $col <= $number; $col++) {
+                echo "<td>" . ($row * $col) . "</td>";
+            }
+            echo "</tr>";
+        }
+        EECS 348 Lab Seven Practice Four
+        echo "</table>";
+    } else {
+        echo "<p>Please enter a valid positive number.</p>";
+    }
+}
+?>
+EECS 348 Lab Seven Practice Four
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EECS 348 Lab Seven Practice Four</title>
+</head>
+<body>
+    <h1>EECS 348 Lab Seven Practice Four</h1>
+    <h1>Multiplication Table Generator</h1>
+    <form method="post">
+        <label for="number">Enter a number:</label>
+        <input type="number" name="number" id="number" min="1" required>
+        <input type="submit" value="Generate Table">
+    </form>
+</body>
+</html>
 
-
-
-<form action="practice4.php" method="post">
-    Input size of multiplication table: <input type="text" name="size"><br>
-    <input type="submit">
-</form>
-
-
-</body></html>

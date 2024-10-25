@@ -4,12 +4,12 @@ function password_check() {
 
 
     if (pass1.length < 8) {
-        alert("The length of the first password is less than 8 letters!")
+        alert("First password isn't long enough")
     } else if (pass2.length < 8) {
-        alert("The length of the second password is less than 8 letters!")
+        alert("Second password isn't long enough")
     } else if (pass1 != pass2) {
-        alert("Two passwords don't match!")
+        alert("The passwords don't match")
     } else {
-        alert("Everything is good!")
+        alert("Password validated")
     }
 }
