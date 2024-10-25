@@ -1,4 +1,4 @@
-function alert_paragraph_color() {
+function change_paragraph() {
     var border_R = document.getElementById("border_R").value;
     var border_G = document.getElementById("border_G").value;
     var border_B = document.getElementById("border_B").value;
