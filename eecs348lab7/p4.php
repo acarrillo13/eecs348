@@ -1,7 +1,6 @@
 <?php
-// Define the number of rows and columns
-$rows = name;
-$columns = name;
+$rows = size;
+$columns = size;
 
 
 echo "<table border='1'>";
